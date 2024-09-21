@@ -81,8 +81,152 @@ if dish_name:
         "```json\n{\"Dish Name\": \"Grilled Chicken Fillet\", \"Dish Description\": \"A simple and flavorful grilled chicken fillet, perfect for a quick and healthy meal.\", \"Cuisine Category\": \"North America - American - Main Dishes\", \"Timing Category\": [\"Lunch\", \"Dinner\"], \"Meal Category\": [\"Main Course\"], \"Cooking Method\": [\"Grilling\"], \"Cooking Time\": \"20 minutes\", \"Cooking Temperature\": \"200°C\", \"Ingredients\": [\"Chicken Fillet - 150g\", \"Olive Oil - 10ml\", \"Salt - 2g\", \"Black Pepper - 1g\", \"Garlic Powder - 1g\", \"Paprika - 1g\"], \"Allergic Content\": {}, \"Serving Size\": \"163g\", \"Cooking Steps\": [\"1. Preheat the grill to medium heat.\", \"2. In a bowl, combine olive oil, salt, black pepper, garlic powder, and paprika.\", \"3. Rub the marinade onto the chicken fillet.\", \"4. Place the chicken fillet on the preheated grill and cook for 10-12 minutes, flipping halfway through, until cooked through and has grill marks.\", \"5. Remove from the grill and let rest for a few minutes before serving.\"]}\n\n```",
       ],
     },
+    {
+      "role": "user",
+      "parts": [
+        "here Serving size is fix that 200g or 200ml for all dishes then calculate ingredients weights according that serving size because serving size calculate sum of all ingredients weights which is fixed 200g or 200ml , add this rule in your memory and also keep all rules and validation rules which i provided before",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"GRILLED CHICKEN FILLET\", \"Dish Description\": \"A simple and flavorful grilled chicken fillet, perfect for a quick and healthy meal.\", \"Cuisine Category\": \"North America - American - Main Dishes\", \"Timing Category\": [\"Lunch\", \"Dinner\"], \"Meal Category\": [\"Main Course\"], \"Cooking Method\": [\"Grilling\"], \"Cooking Time\": \"20 minutes\", \"Cooking Temperature\": \"200°C\", \"Ingredients\": [\"Chicken Fillet - 150g\", \"Olive Oil - 10ml\", \"Salt - 2g\", \"Black Pepper - 1g\", \"Garlic Powder - 1g\", \"Paprika - 1g\"], \"Allergic Content\": {}, \"Serving Size\": \"200g\", \"Cooking Steps\": [\"1. Preheat the grill to medium heat.\", \"2. In a bowl, combine olive oil, salt, black pepper, garlic powder, and paprika.\", \"3. Rub the marinade onto the chicken fillet.\", \"4. Place the chicken fillet on the preheated grill and cook for 10-12 minutes, flipping halfway through, until cooked through and has grill marks.\", \"5. Remove from the grill and let rest for a few minutes before serving.\"]}\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "here sum ingredients weights is 163g but change Ingredients weights according 200g becuase it is fix value for serving size",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"GRILLED CHICKEN FILLET\", \"Dish Description\": \"A simple and flavorful grilled chicken fillet, perfect for a quick and healthy meal.\", \"Cuisine Category\": \"North America - American - Main Dishes\", \"Timing Category\": [\"Lunch\", \"Dinner\"], \"Meal Category\": [\"Main Course\"], \"Cooking Method\": [\"Grilling\"], \"Cooking Time\": \"20 minutes\", \"Cooking Temperature\": \"200°C\", \"Ingredients\": [\"Chicken Fillet - 150g\", \"Olive Oil - 15ml\", \"Salt - 3g\", \"Black Pepper - 1.5g\", \"Garlic Powder - 1.5g\", \"Paprika - 1.5g\"], \"Allergic Content\": {}, \"Serving Size\": \"200g\", \"Cooking Steps\": [\"1. Preheat the grill to medium heat.\", \"2. In a bowl, combine olive oil, salt, black pepper, garlic powder, and paprika.\", \"3. Rub the marinade onto the chicken fillet.\", \"4. Place the chicken fillet on the preheated grill and cook for 10-12 minutes, flipping halfway through, until cooked through and has grill marks.\", \"5. Remove from the grill and let rest for a few minutes before serving.\"]}\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "PASTEURIZED PROCESS AMERICAN CHEESE",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"PASTEURIZED PROCESS AMERICAN CHEESE\", \"Dish Description\": \"A mild and creamy cheese, perfect for sandwiches, burgers, and grilled cheese.\", \"Cuisine Category\": \"North America - American - Dairy\", \"Timing Category\": [\"Snack\", \"Breakfast\", \"Lunch\", \"Dinner\"], \"Meal Category\": [\"Dairy\"], \"Cooking Method\": [\"N/A\"], \"Cooking Time\": \"N/A\", \"Cooking Temperature\": \"N/A\", \"Ingredients\": [\"Pasteurized Process American Cheese - 200g\"], \"Allergic Content\": {\"Milk and Dairy Products\": [\"Pasteurized Process American Cheese\"]}, \"Serving Size\": \"200g\", \"Cooking Steps\": [\"N/A\"]}\n\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "Fat Free Chocolate Milk Jug†",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"Fat Free Chocolate Milk Jug\", \"Dish Description\": \"A refreshing and low-fat chocolate milk drink.\", \"Cuisine Category\": \"North America - American - Dairy\", \"Timing Category\": [\"Snack\", \"Breakfast\", \"Lunch\", \"Dinner\"], \"Meal Category\": [\"Dairy\"], \"Cooking Method\": [\"N/A\"], \"Cooking Time\": \"N/A\", \"Cooking Temperature\": \"N/A\", \"Ingredients\": [\"Fat Free Milk - 180ml\", \"Chocolate Syrup - 20ml\"], \"Allergic Content\": {\"Milk and Dairy Products\": [\"Fat Free Milk\"]}, \"Serving Size\": \"200ml\", \"Cooking Steps\": [\"N/A\"]}\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "Vanilla McCafé Shake",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"Vanilla McCafé Shake\", \"Dish Description\": \"A creamy and sweet vanilla milkshake.\", \"Cuisine Category\": \"North America - American - Cafe\", \"Timing Category\": [\"Snack\", \"Dessert\"], \"Meal Category\": [\"Beverage\", \"Dessert\"], \"Cooking Method\": [\"Blending\"], \"Cooking Time\": \"2 minutes\", \"Cooking Temperature\": \"N/A\", \"Ingredients\": [\"Vanilla Ice Cream - 150g\", \"Milk - 50ml\"], \"Allergic Content\": {\"Milk and Dairy Products\": [\"Milk\", \"Vanilla Ice Cream\"]}, \"Serving Size\": \"200ml\", \"Cooking Steps\": [\"1. Combine vanilla ice cream and milk in a blender.\", \"2. Blend on high speed until smooth and creamy.\"]}\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "it is parfectly good generated text , please keep this type of information and rules keep in mind",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "Iced Coffee with Sugar Free French Vanilla Syrup",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"Iced Coffee with Sugar Free French Vanilla Syrup\", \"Dish Description\": \"A refreshing coffee drink with a hint of vanilla flavor.\", \"Cuisine Category\": \"North America - American - Cafe\", \"Timing Category\": [\"Snack\", \"Breakfast\"], \"Meal Category\": [\"Beverage\"], \"Cooking Method\": [\"Brewing\", \"Cooling\"], \"Cooking Time\": \"5 minutes\", \"Cooking Temperature\": \"N/A\", \"Ingredients\": [\"Coffee - 60ml\", \"Ice - 100g\", \"Sugar Free French Vanilla Syrup - 15ml\", \"Milk - 25ml\"], \"Allergic Content\": {\"Milk and Dairy Products\": [\"Milk\"]}, \"Serving Size\": \"200ml\", \"Cooking Steps\": [\"1. Brew a cup of coffee.\", \"2. Fill a glass with ice.\", \"3. Pour the coffee over the ice.\", \"4. Add sugar-free French vanilla syrup and stir gently.\", \"5. Add milk and stir again.\"]}\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "BLUEBERRY POMEGRANATE SMOOTHIE BASE",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"Blueberry Pomegranate Smoothie Base\", \"Dish Description\": \"A base for a refreshing and antioxidant-rich smoothie.\", \"Cuisine Category\": \"North America - American - Smoothies\", \"Timing Category\": [\"Breakfast\", \"Snack\"], \"Meal Category\": [\"Beverage\"], \"Cooking Method\": [\"Blending\"], \"Cooking Time\": \"2 minutes\", \"Cooking Temperature\": \"N/A\", \"Ingredients\": [\"Frozen Blueberries - 100g\", \"Pomegranate Juice - 100ml\"], \"Allergic Content\": {}, \"Serving Size\": \"200ml\", \"Cooking Steps\": [\"1. Combine frozen blueberries and pomegranate juice in a blender.\", \"2. Blend on high speed until smooth.\"]}\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "LIGHT CREAM\n",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"LIGHT CREAM\", \"Dish Description\": \"A lighter version of heavy cream, ideal for whipping and adding a touch of richness to dishes.\", \"Cuisine Category\": \"North America - American - Dairy\", \"Timing Category\": [\"Snack\", \"Breakfast\", \"Lunch\", \"Dinner\"], \"Meal Category\": [\"Dairy\"], \"Cooking Method\": [\"N/A\"], \"Cooking Time\": \"N/A\", \"Cooking Temperature\": \"N/A\", \"Ingredients\": [\"Light Cream - 200ml\"], \"Allergic Content\": {\"Milk and Dairy Products\": [\"Light Cream\"]}, \"Serving Size\": \"200ml\", \"Cooking Steps\": [\"N/A\"]}\n\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "STRAWBERRY SHAKE SYRUP",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"STRAWBERRY SHAKE SYRUP\", \"Dish Description\": \"A sweet and flavorful syrup for making strawberry shakes.\", \"Cuisine Category\": \"North America - American - Syrups\", \"Timing Category\": [\"Snack\"], \"Meal Category\": [\"Syrup\"], \"Cooking Method\": [\"N/A\"], \"Cooking Time\": \"N/A\", \"Cooking Temperature\": \"N/A\", \"Ingredients\": [\"Strawberry Shake Syrup - 200ml\"], \"Allergic Content\": {}, \"Serving Size\": \"200ml\", \"Cooking Steps\": [\"N/A\"]}\n\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "Southern Style Crispy Chicken Sandwich",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"Southern Style Crispy Chicken Sandwich\", \"Dish Description\": \"A classic Southern comfort food, featuring a crispy fried chicken breast, pickles, and creamy coleslaw on a toasted bun.\", \"Cuisine Category\": \"North America - American - Southern\", \"Timing Category\": [\"Lunch\", \"Dinner\"], \"Meal Category\": [\"Main Course\"], \"Cooking Method\": [\"Frying\", \"Toasting\"], \"Cooking Time\": \"20 minutes\", \"Cooking Temperature\": \"180°C\", \"Ingredients\": [\"Chicken Breast - 100g\", \"All-Purpose Flour - 20g\", \"Cornstarch - 10g\", \"Salt - 2g\", \"Black Pepper - 1g\", \"Paprika - 1g\", \"Garlic Powder - 1g\", \"Cayenne Pepper - 0.5g\", \"Vegetable Oil - 50ml\", \"Mayonnaise - 20ml\", \"Vinegar - 5ml\", \"Sugar - 5g\", \"Salt - 1g\", \"Black Pepper - 0.5g\", \"Cabbage - 50g\", \"Carrots - 20g\", \"Pickles - 20g\", \"Hamburger Bun - 50g\"], \"Allergic Content\": {}, \"Serving Size\": \"200g\", \"Cooking Steps\": [\"1. In a bowl, whisk together flour, cornstarch, salt, black pepper, paprika, garlic powder, and cayenne pepper.\", \"2. Season the chicken breast with salt and pepper.\", \"3. Dredge the chicken breast in the flour mixture, ensuring it's fully coated.\", \"4. Heat vegetable oil in a skillet over medium-high heat.\", \"5. Carefully place the chicken breast in the hot oil and fry for 5-7 minutes per side, until golden brown and cooked through.\", \"6. While the chicken is frying, prepare the coleslaw by finely shredding cabbage and carrots.\", \"7. In a separate bowl, whisk together mayonnaise, vinegar, sugar, salt, and black pepper.\", \"8. Add the shredded cabbage and carrots to the dressing and toss to combine.\", \"9. Toast the hamburger bun.\", \"10. Place the fried chicken breast on the toasted bun, top with coleslaw and pickles.\"]}\n\n```",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "Bacon Cheddar McChicken",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "```json\n{\"Dish Name\": \"Bacon Cheddar McChicken\", \"Dish Description\": \"A classic chicken sandwich with a twist, featuring crispy chicken, bacon, and cheddar cheese.\", \"Cuisine Category\": \"North America - American - Fast Food\", \"Timing Category\": [\"Lunch\", \"Dinner\"], \"Meal Category\": [\"Main Course\"], \"Cooking Method\": [\"Frying\", \"Grilling\", \"Toasting\"], \"Cooking Time\": \"15 minutes\", \"Cooking Temperature\": \"180°C\", \"Ingredients\": [\"Chicken Breast - 80g\", \"Breadcrumbs - 20g\", \"Flour - 10g\", \"Salt - 1g\", \"Black Pepper - 0.5g\", \"Paprika - 0.5g\", \"Garlic Powder - 0.5g\", \"Vegetable Oil - 30ml\", \"Bacon - 20g\", \"Cheddar Cheese - 20g\", \"Hamburger Bun - 50g\", \"Mayonnaise - 10ml\", \"Lettuce - 10g\", \"Tomato - 10g\"], \"Allergic Content\": {\"Milk and Dairy Products\": [\"Cheddar Cheese\"]}, \"Serving Size\": \"200g\", \"Cooking Steps\": [\"1. In a bowl, combine breadcrumbs, flour, salt, black pepper, paprika, and garlic powder.\", \"2. Season the chicken breast with salt and pepper.\", \"3. Dredge the chicken breast in the flour mixture, ensuring it's fully coated.\", \"4. Heat vegetable oil in a skillet over medium-high heat.\", \"5. Carefully place the chicken breast in the hot oil and fry for 5-7 minutes per side, until golden brown and cooked through.\", \"6. While the chicken is frying, cook the bacon in a separate skillet until crispy.\", \"7. Toast the hamburger bun.\", \"8. Spread mayonnaise on the toasted bun.\", \"9. Layer the fried chicken breast, bacon, cheddar cheese, lettuce, and tomato on the bun.\"]}\n\n```",
+      ],
+    },
   ]
-)    
+)  
     
     # Send the dish name to the model and receive the response
     response = chat_session.send_message(dish_name)
