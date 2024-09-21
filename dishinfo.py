@@ -84,42 +84,6 @@ if dish_name:
     {
       "role": "user",
       "parts": [
-        "Latte with Sugar Free French Vanilla Syrup",
-      ],
-    },
-    {
-      "role": "model",
-      "parts": [
-        "```json\n{\n\"Dish Name\": \"Latte with Sugar Free French Vanilla Syrup\",\n\"Dish Description\": \"A classic latte with a sugar-free twist, featuring rich vanilla flavor.\",\n\"Cuisine Category\": \"North America - American - Coffee Drinks\",\n\"Timing Category\": [\n\"Snack\",\n\"Breakfast\",\n\"Lunch\"\n],\n\"Meal Category\": [\n\"Beverage\"\n],\n\"Cooking Method\": [\n\"Boiling\",\n\"Steaming\"\n],\n\"Cooking Time\": \"5 minutes\",\n\"Cooking Temperature\": \"N/A\",\n\"Ingredients\": [\n\"Espresso - 40ml\",\n\"Milk - 130ml\",\n\"Sugar Free French Vanilla Syrup - 15ml\",\n\"Whipped Cream - 10ml\",\n\"Vanilla Extract - 5ml\" \n],\n\"Allergic Content\": {\n\"Milk and Dairy Products\": [\n\"Milk\",\n\"Whipped Cream\"\n]\n},\n\"Serving Size\": \"200ml\",\n\"Cooking Steps\": [\n\"1. Brew a shot of espresso.\",\n\"2. Heat milk in a saucepan or steam it using a milk frother.\",\n\"3. Pour the espresso into a mug.\",\n\"4. Add sugar-free French vanilla syrup to the espresso.\",\n\"5. Pour the heated milk over the espresso and syrup.\",\n\"6. Top with whipped cream and a drop of vanilla extract for extra flavor.\"\n]\n}\n``` \n",
-      ],
-    },
-    {
-      "role": "user",
-      "parts": [
-        "PASTEURIZED PROCESS AMERICAN CHEESE",
-      ],
-    },
-    {
-      "role": "model",
-      "parts": [
-        "```json\n{\n\"Dish Name\": \"Pasteurized Process American Cheese\",\n\"Dish Description\": \"A smooth, mild cheese made from pasteurized milk and processed for a consistent texture and flavor.\",\n\"Cuisine Category\": \"North America - American - Cheese\",\n\"Timing Category\": [\n\"Snack\",\n\"Lunch\",\n\"Dinner\"\n],\n\"Meal Category\": [\n\"Dairy Product\",\n\"Ingredient\"\n],\n\"Cooking Method\": [\n\"N/A\"\n],\n\"Cooking Time\": \"N/A\",\n\"Cooking Temperature\": \"N/A\",\n\"Ingredients\": [\n\"Pasteurized Milk - 180g\",\n\"Cheese Cultures - 5g\",\n\"Salt - 5g\",\n\"Sodium Phosphate - 2g\",\n\"Citric Acid - 1g\",\n\"Coloring (Annato) - 1g\"\n],\n\"Allergic Content\": {\n\"Milk and Dairy Products\": [\n\"Pasteurized Milk\"\n]\n},\n\"Serving Size\": \"200g\",\n\"Cooking Steps\": [\n\"1. (Commercial Production) Milk is pasteurized and then combined with cheese cultures to start the cheesemaking process.\",\n\"2. The milk is then coagulated and the curds are separated from the whey.\",\n\"3. The curds are then processed and blended with other ingredients like salt, sodium phosphate, and citric acid.\",\n\"4. The mixture is then heated to melt and create a smooth, consistent texture.\",\n\"5. The molten cheese is then packaged and cooled, resulting in the familiar block of processed American cheese.\"\n]\n}\n``` \n",
-      ],
-    },
-    {
-      "role": "user",
-      "parts": [
-        "Fat Free Chocolate Milk Jug†",
-      ],
-    },
-    {
-      "role": "model",
-      "parts": [
-        "```json\n{\n\"Dish Name\": \"Fat Free Chocolate Milk Jug\",\n\"Dish Description\": \"A refreshing and low-fat beverage made with milk and chocolate flavoring.\",\n\"Cuisine Category\": \"North America - American - Dairy Drinks\",\n\"Timing Category\": [\n\"Snack\",\n\"Breakfast\",\n\"Lunch\"\n],\n\"Meal Category\": [\n\"Beverage\"\n],\n\"Cooking Method\": [\n\"Mixing\"\n],\n\"Cooking Time\": \"1 minute\",\n\"Cooking Temperature\": \"N/A\",\n\"Ingredients\": [\n\"Fat Free Milk - 180ml\",\n\"Chocolate Syrup - 15ml\",\n\"Cocoa Powder - 5g\"\n],\n\"Allergic Content\": {\n\"Milk and Dairy Products\": [\n\"Fat Free Milk\"\n]\n},\n\"Serving Size\": \"200ml\",\n\"Cooking Steps\": [\n\"1. Pour the fat free milk into a jug or container.\",\n\"2. Add the chocolate syrup and cocoa powder to the milk.\",\n\"3. Stir or shake the jug until the chocolate syrup and cocoa powder are fully mixed and dissolved in the milk.\",\n\"4. Refrigerate until chilled and enjoy!\"\n]\n}\n``` \n",
-      ],
-    },
-    {
-      "role": "user",
-      "parts": [
         "if total sum of ingredients weights is less than 200g or 200ml so increase ingredients weights according to set sum of ingredients weight is 200g or 200ml becuase its service size is fixed 200g or 200ml for all dishes.",
       ],
     },
@@ -133,24 +97,6 @@ if dish_name:
       "role": "user",
       "parts": [
         "please keep this rule in your mind",
-      ],
-    },
-    {
-      "role": "model",
-      "parts": [
-        "You",
-      ],
-    },
-    {
-      "role": "user",
-      "parts": [
-        "PASTEURIZED PROCESS AMERICAN CHEESE",
-      ],
-    },
-    {
-      "role": "model",
-      "parts": [
-        "```json\n{\n\"Dish Name\": \"Pasteurized Process American Cheese\",\n\"Dish Description\": \"A smooth, mild cheese made from pasteurized milk and processed for a consistent texture and flavor.\",\n\"Cuisine Category\": \"North America - American - Cheese\",\n\"Timing Category\": [\n\"Snack\",\n\"Lunch\",\n\"Dinner\"\n],\n\"Meal Category\": [\n\"Dairy Product\",\n\"Ingredient\"\n],\n\"Cooking Method\": [\n\"N/A\"\n],\n\"Cooking Time\": \"N/A\",\n\"Cooking Temperature\": \"N/A\",\n\"Ingredients\": [\n\"Pasteurized Milk - 180g\",\n\"Cheese Cultures - 10g\",\n\"Salt - 5g\",\n\"Sodium Phosphate - 3g\",\n\"Citric Acid - 1g\",\n\"Coloring (Annato) - 1g\"\n],\n\"Allergic Content\": {\n\"Milk and Dairy Products\": [\n\"Pasteurized Milk\"\n]\n},\n\"Serving Size\": \"200g\",\n\"Cooking Steps\": [\n\"1. (Commercial Production) Milk is pasteurized and then combined with cheese cultures to start the cheesemaking process.\",\n\"2. The milk is then coagulated and the curds are separated from the whey.\",\n\"3. The curds are then processed and blended with other ingredients like salt, sodium phosphate, and citric acid.\",\n\"4. The mixture is then heated to melt and create a smooth, consistent texture.\",\n\"5. The molten cheese is then packaged and cooled, resulting in the familiar block of processed American cheese.\"\n]\n}\n```\n\nI've adjusted the quantities of the cheese cultures, salt, sodium phosphate, and citric acid to ensure the total weight reaches 200g.  Let me know if you have any other requests! \n",
       ],
     },
   ]
